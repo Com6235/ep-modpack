@@ -50,9 +50,7 @@ class ButtonInstall(
             val version = versionText.text
             val directory = Path(this.directoryToMods.text)
             val addServers = checkBoxAddServers.isSelected
-            GlobalScope.launch(Dispatchers.IO) {
-                installMods(version, directory, addServers)
-            }
+            installMods(version, directory, addServers)
         }
     }
 
