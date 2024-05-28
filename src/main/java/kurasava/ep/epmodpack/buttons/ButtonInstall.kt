@@ -91,7 +91,6 @@ class ButtonInstall(
                     latch.countDown()
                     Platform.runLater {
                         bar.progress = (mods1.size - latch.count) * objectSize
-                        println(bar.progress)
                     }
                 }
             }
